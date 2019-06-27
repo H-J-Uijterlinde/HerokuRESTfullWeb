@@ -11,7 +11,7 @@ import java.util.List;
 The TodoRepository is similar to the BoodschapRepository.
  */
 
-@CrossOrigin(origins = "https://lit-sierra-34293.herokuapp.com")
+@CrossOrigin(origins = "https://sema-todolist.herokuapp.com")
 @RepositoryRestResource(path = "ToDo")
 public interface ToDoRepository extends JpaRepository<ToDo, Long> {
     List<ToDo> findAllByOrderByCompletedAsc();
