@@ -1,5 +1,6 @@
-package com.Semafoor.ToDoList.Model;
+package com.Semafoor.ToDoList.Model.ToDo;
 
+import com.Semafoor.ToDoList.Model.AbstractEntity;
 import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 
 import javax.persistence.*;
