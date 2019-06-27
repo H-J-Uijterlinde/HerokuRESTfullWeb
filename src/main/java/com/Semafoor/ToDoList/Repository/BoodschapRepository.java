@@ -3,6 +3,7 @@ package com.Semafoor.ToDoList.Repository;
 import com.Semafoor.ToDoList.Model.Boodschap;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ boodschap transactions through for example http requests.
 I added one additional method to find boodschap items ordered by their completed status.
  */
 
+@CrossOrigin(origins = "https://lit-sierra-34293.herokuapp.com")
 @RepositoryRestResource(path = "boodschap")
 public interface BoodschapRepository extends JpaRepository<Boodschap, Long> {
     List<Boodschap> findAllByOrderByCompletedAsc();
