@@ -19,7 +19,7 @@ boodschap transactions through for example http requests.
 I added one additional method to find boodschap items ordered by their completed status.
  */
 
-@CrossOrigin(origins = "https://sema-todolist.herokuapp.com")
+@CrossOrigin()
 @RepositoryRestResource(path = "boodschap")
 public interface BoodschapRepository extends JpaRepository<Boodschap, Long> {
     List<Boodschap> findAllByOrderByCompletedAsc();
